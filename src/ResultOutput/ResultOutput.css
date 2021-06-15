@@ -1,0 +1,44 @@
+.ResultOutput {
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+
+.ResultOutput > canvas {
+    cursor: pointer;
+    transition: box-shadow 200ms;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(179, 179, 179, 0.5);
+    background-color: #ffffff;
+}
+
+.ResultOutput > canvas:hover {
+    box-shadow: 3px 3px 8px rgba(179, 179, 179, 0.5);
+}
+
+.ResultOutput > canvas.focused {
+    box-shadow: 5px 5px 14px rgba(179, 179, 179, 0.5);
+}
+
+.ResultOutput > textarea,
+.ResultOutput > div.testOutput {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ResultOutput > textarea {
+
+    /* remove styles */
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+}
+
