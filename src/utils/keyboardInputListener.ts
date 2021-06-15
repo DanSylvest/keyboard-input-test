@@ -101,7 +101,7 @@ class KeyboardInputListener {
         if (!(isNumpadKey(value.code) || isSymbolKey(value.code)))
             key = keyByCode[value.code];
 
-        if (modifiersList.length > 0 && !lastKeyIsModifier)
+        if (modifiersList.length > 0 && !lastKeyIsModifier && !isNumpadKey(value.code))
             key = keyByCode[value.code];
 
         if (!lastKeyIsModifier)
